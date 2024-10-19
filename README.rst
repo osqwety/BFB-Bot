@@ -24,7 +24,7 @@ To install the library, please visit their site. To utilize my code, simply down
 Integrating AI
 ------------------
 
-Setup a ubuntu instance with a powerful GPU ideally:
+Setup a Ubuntu instance with a GPU ideally:
 
 .. code:: sh
 
