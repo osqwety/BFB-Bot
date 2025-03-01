@@ -4,7 +4,6 @@ BFB Discord Bot
 Credits
 --------
 - This uses the discord.py library by Rapptz.
-- Contact osqwety to use my source code.
 
 Key Features
 -------------
@@ -50,7 +49,7 @@ Now, in your code setup this function:
         ])
         return (response['message']['content'])
 
-Utilize the response in the bot in the form of a reply or such.
+Utilize the response for whatever.
 
 
 
