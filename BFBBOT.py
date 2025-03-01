@@ -20,7 +20,7 @@ async def load(ctx, extension):
         await bot.load_extension(f'cogs.{extension}')
         await ctx.reply(f'{extension} has been loaded')
     else:
-        await ctx.reply("no perms")
+        await ctx.reply("You do not have permissions.")
 
 
 @bot.command()
@@ -29,7 +29,7 @@ async def unload(ctx,extension):
         await bot.unload_extension(f'cogs.{extension}')
         await ctx.reply(f'{extension} has been unloaded')
     else: 
-        await ctx.reply("no perms")
+        await ctx.reply("You do not have permissions")
         
 @bot.command()
 async def reload(ctx, extension):
