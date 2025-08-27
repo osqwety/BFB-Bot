@@ -40,7 +40,7 @@ Now, in your code setup this function:
     #change host URL to machines's IP on port 11434
     from ollama import Client
     def main_ai2(input2): 
-        client = Client(host='http://{IP}11434')
+        client = Client(host='http://{IP}:11434')
         response = client.chat(model='llama3', messages=[
         {
             'role': 'user',
