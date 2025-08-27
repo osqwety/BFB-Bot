@@ -23,7 +23,7 @@ To install the library, please visit their site. To utilize my code, simply down
 Integrating AI
 ------------------
 
-Setup a Ubuntu instance with a GPU ideally:
+Setup a Linux instance with a GPU ideally:
 
 .. code:: sh
 
@@ -40,7 +40,7 @@ Now, in your code setup this function:
     #change host URL to machines's IP on port 11434
     from ollama import Client
     def main_ai2(input2): 
-        client = Client(host='http://localhost:11434')
+        client = Client(host='http://{IP}11434')
         response = client.chat(model='llama3', messages=[
         {
             'role': 'user',
@@ -49,6 +49,7 @@ Now, in your code setup this function:
         ])
         return (response['message']['content'])
 
+{IP} is the IP Address of the server running the ollama instance
 Utilize the response for whatever.
 
 
