@@ -1,6 +1,6 @@
 from ollama import Client
 def main_ai2(input2): 
-    client = Client(host='http://localhost:11434')
+    client = Client(host='http://23.191.23.134:11434')
     response = client.chat(model='llama3.3', messages=[
     {
         'role': 'user',
